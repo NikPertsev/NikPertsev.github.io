@@ -1,0 +1,150 @@
+@media screen and (min-width: 1000px) {
+.calendar-wrapper {
+  width: 720px;
+  margin: 3em auto;
+  padding: 2em;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 2px 2px 2px 2px;
+  
+}
+.list__container {
+  min-height: 100px;
+  padding: 25px;
+}
+}
+@media screen and (max-width: 1000px) {
+  .calendar-wrapper {
+    width: 720px;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 2px 2px 2px 2px;
+    padding: 2em;
+    margin-top: -80px;
+    margin-bottom: -120px;
+  }
+  .list__container {
+    min-height: 100px;
+  }
+  }
+
+table {
+  clear: both;
+  width: 100%;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #444;
+  margin-top: 50px;
+}
+td {
+  height: 96px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2em;
+  width: 14.28571429%;
+  border-radius: 20px;
+  position: relative;
+  user-select: none;
+}
+
+td:hover {
+  background-color: #ddd;
+  transition: 0.1s linear;
+  opacity: 0.5;
+}
+/*Была шапка*/
+/*
+thead td {
+  border: none;
+  color: #28283b;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+*/
+
+td.not-current {
+  color: #c0c0c0;
+}
+
+#btnPrev:before,
+#btnNext:before {
+  border-radius: 5px;
+  margin: -12px 0 0 -20px;
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  background-color: rgb(218, 218, 218);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#btnPrev,
+#btnNext {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  color: #444;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin: 0 50px 0 50px;
+}
+
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+#btnPrev:hover:before,
+#btnNext:hover:before {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.up__panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#currMonth {
+  font-size: 40px;
+}
+
+/*Styles lists*/
+
+.list__lessons {
+  font-size: 30px;
+}
+
+.divtoday {
+  position: relative;
+  font-weight: 700;
+  color: #28283b;
+  font-size: 2em;
+}
+
+.divnormal {
+  position: relative;
+}
+
+.pointer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #7a9fe4;
+  border-radius: 10px;
+  margin-left: 70px;
+}
+
+.pointer__dis {
+  opacity: 0;
+}

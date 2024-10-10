@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-ms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fabi - школа танцев!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="navbar-brand" href="/">
+            <img src="/images/Fabi.png" alt="Fabi" />
+          </div>
+          <nav>
+            <a class="nav__link" href="/">Главная</a>
+            <a class="nav__link" href="/onlinelessons">Онлайн уроки</a>
+            <a class="nav__link" href="/individuals">Индивидуальные</a>
+            <a class="nav__link" href="/raspisanie">Расписание</a>
+            <a class="nav__link" href="/contacts">Контакты</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container__content">
+        <div class="header__text">
+          <h2 class="center">Оставьте свои данные и мы свяжемся с вами!</h2>
+        </div>
+        <div class="form__grid">
+          <form
+            class="form__css"
+            name="data"
+            method="post"
+            action="telegram.php"
+          >
+            <div class="textbox__container">
+              <input
+                class="text__box"
+                type="text"
+                name="fname"
+                required
+                minlength="3"
+                maxlength="20"
+              />
+              <span class="textbox__desc">Имя:</span>
+            </div>
+            <div class="textbox__container">
+              <input
+                class="text__box"
+                type="text"
+                name="sname"
+                required
+                minlength="3"
+                maxlength="20"
+              />
+              <span class="textbox__desc">Фамилия:</span>
+            </div>
+            <div class="textbox__container">
+              <input
+                class="text__box"
+                type="text"
+                name="number"
+                required
+                minlength="10"
+                maxlength="12"
+              />
+              <span class="textbox__desc">Номер телефона:</span>
+            </div>
+            <div class="textbox__container">
+              <input
+                class="text__box"
+                type="text"
+                name="mail"
+                minlength="6"
+                maxlength="50"
+              />
+              <span class="textbox__desc">Адрес ЭП:</span>
+            </div>
+            <p>
+              <input class="button__stylize" type="submit" value="Отправить" />
+            </p>
+          </form>
+        </div>
+        <div class="result">
+          <img class="img-size" src="/images/resultform.png" alt="result" />
+        </div>
+        <div class="img__card">
+          <img
+            class="rnd-image img-size"
+            src="/images/fabiInd.jpg"
+            alt="fabiInd"
+            width="600"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>

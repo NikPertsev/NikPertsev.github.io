@@ -1,0 +1,346 @@
+@media screen and (min-width: 1000px) {
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+  line-height: 1.6;
+  margin: 0;
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+  min-width: 1000px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*Container*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  transition: linear 0.1s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  transition: linear 0.1s;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 1000px;
+}
+
+.nvbr{
+  transition: all 0.2s;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  font-size: 24px;
+  -webkit-text-stroke: 1px #000;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  position: relative;
+}
+
+.nav__link:after {
+  content: "";
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 20px;
+
+  transition: opacity 0.2s linear;
+
+  background-color: #fff;
+  position: absolute;
+}
+
+.nav__link:hover {
+  color: #3f130b;
+}
+.nav__link:hover:after {
+  opacity: 1;
+}
+
+/*Section*/
+
+.container__content {
+  border-radius: 2.5vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+
+.inf__container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  width: 100%-margin;
+  margin: 50px 50px;
+  transition: all 0.2s;
+}
+
+.inf__container__text {
+  width: 400px;
+  font-family: Pacifico;
+  font-size: 40px;
+  /*text-shadow: 3px -4px 5px #666;*/
+  text-align: center;
+  align-content: center;
+  transform: rotate(-4deg);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(160, 1, 1),
+    rgb(173, 1, 153)
+  );
+}
+
+.button__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/*Img-working*/
+
+.img__card {
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.rnd-image {
+  border-radius: 25px;
+  transition: linear 0.1s;
+  box-shadow: 3px 4px 5px #666;
+  display: flex;
+  position: relative;
+}
+
+.rnd-image:hover {
+  transform: scale(1.05);
+  transition: linear 0.1s;
+  box-shadow: 3px 8px 10px #666;
+}
+
+.button__stylize {
+  background: linear-gradient(rgb(246, 138, 156), rgb(247, 50, 191));
+  width: 300px;
+  height: 60px;
+  font-family: Pacifico;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 30px;
+  border: #fff;
+  box-shadow: 3px 4px 5px #666;
+  transition: linear 0.2s;
+}
+
+.button__stylize:hover {
+  transition: linear 0.2s;
+  transform: scale(1.05);
+  background: linear-gradient(rgb(247, 50, 191), rgb(246, 138, 156));
+}
+/* Стили INDIVIDUALS */
+
+.form__grid {
+  display: grid;
+  grid-template-columns: [start] auto [line2] 300px [line3] auto [end];
+}
+
+.form__css {
+  position: relative;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.text__box {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #777;
+  padding: 23px;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 16px;
+}
+
+.textbox__container {
+  display: block;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.textbox__desc {
+  display: block;
+  position: absolute;
+  margin: 5px 5px;
+  color: #888;
+  transition: all 0.1s;
+}
+
+.ui-field--active {
+  transform: translate(-14%, -44%) scale(0.7);
+  transition: all 0.1s;
+}
+
+.header__text {
+  display: flex;
+  justify-content: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 30px;
+  margin-top: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(160, 1, 1),
+    rgb(173, 1, 153)
+  );
+  transition: linear 0.1s;
+}
+
+.header__text:hover {
+  transform: scale(1.05);
+  transition: linear 0.1s;
+}
+
+/*Валидация*/
+
+/*Тест работы с формами */
+.box1 {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(121, 20, 20);
+  display: flex;
+  position: relative;
+}
+
+/* Результат отправки формы */
+
+.result {
+  opacity: 0;
+}
+
+.result--active {
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+/*Online lessons*/
+
+.video__container {
+  display: flex;
+  justify-content: center;
+
+  margin: 25px 0 100px 0;
+}
+
+.text_to_video {
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(160, 1, 1),
+    rgb(173, 1, 153)
+  );
+}
+
+/*Contacts*/
+
+.contact__text {
+  width: 600px;
+  font-family: Pacifico;
+  font-size: 35px;
+  /*text-shadow: 3px -4px 5px #666;*/
+  text-align: center;
+  align-content: center;
+  margin-right: 50px;
+}
+
+.contact__text2 {
+  font-family: Pacifico;
+  font-size: 35px;
+  /*text-shadow: 3px -4px 5px #666;*/
+  text-align: center;
+  align-content: center;
+}
+
+.tg__container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+}
